@@ -2,119 +2,97 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aspindola Bet777</title>
     <style>
         body {
             background-color: #5C5C5C;
+            color: white;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            font-family: Arial, sans-serif;
+            padding: 20px;
         }
-
-        .logo {
-            width: 35px;
-            height: 35px;
-            vertical-align: middle;
-        }
-
-        .titulo {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-
-        .buttons {
+        .header {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 15px;
+            justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+            width: 100%;
+            max-width: 400px;
         }
-
-        .button-group {
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+        .sair {
+            color: red;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .titulo {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .actions div {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
-        .deposito, .saque {
+        .actions img {
             width: 75px;
             height: 75px;
         }
-
-        .depositoletra, .saqueletra {
-            font-size: 16px;
-            font-weight: bold;
+        .actions a {
+            color: rgb(0, 255, 0);
+            text-decoration: none;
+            font-size: 18px;
             margin-top: 5px;
         }
-
-        .patrocinio2 {
-            font-size: 16px;
-            margin-top: 20px;
+        .saqueletra {
+            color: rgb(255, 238, 0) !important;
         }
-
+        .patrocinio-section {
+            margin-top: 30px;
+        }
         .patrocinio {
             color: rgb(81, 255, 0);
-            font-size: 14px;
-        }
-
-        .sair {
-            color: red;
-            font-size: large;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-
-        /* Ajustes para telas menores */
-        @media (max-width: 768px) {
-            .titulo {
-                font-size: 16px;
-            }
-
-            .buttons {
-                flex-direction: column;
-            }
-
-            .deposito, .saque {
-                width: 60px;
-                height: 60px;
-            }
-
-            .depositoletra, .saqueletra {
-                font-size: 14px;
-            }
-
-            .sair {
-                font-size: medium;
-                right: 5px;
-            }
+            text-decoration: none;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <img src="Imagem do WhatsApp de 2025-02-25 à(s) 00.24.56_10d4fb60.jpg" class="logo" alt="Logo">
-    <span>AspindolaBet777 <a href="saida.html" class="sair">Sair</a></span>
+    <div class="header">
+        <img src="Imagem do WhatsApp de 2025-02-25 à(s) 00.24.56_10d4fb60.jpg" class="logo" alt="Logo">
+        <span>AspindolaBet777</span>
+        <a href="saida.html" class="sair">Sair</a>
+    </div>
 
-    <h3 class="titulo">Seja Bem-Vindo à AspindolaBet777</h3>
+    <h3 class="titulo"><strong>Seja Bem-Vindo à AspindolaBet777</strong></h3>
 
-    <div class="buttons">
-        <div class="button-group">
-            <img src="deposito.png" alt="depositar" class="deposito">
-            <a href="depositarcelular.html" class="depositoletra" style="color: rgb(0, 255, 0);">Depositar</a>
+    <div class="actions">
+        <div>
+            <img src="deposito.png" alt="depositar">
+            <a href="depositarcelular.html">Depositar</a>
         </div>
-
-        <div class="button-group">
-            <img src="saque.png" alt="saque" class="saque">
-            <a href="saquecelular.html" class="saqueletra" style="color: rgb(255, 238, 0);">Saque</a>
+        <div>
+            <img src="saque.png" alt="saque">
+            <a href="saquecelular.html" class="saqueletra">Saque</a>
         </div>
     </div>
 
-    <h3 class="patrocinio2">Patrocínio</h3>
-    <a href="https://www.instagram.com/fanclub_luan_aspindola/" class="patrocinio">FanClub do Luan Aspindola</a>
+    <div class="patrocinio-section">
+        <h3>Patrocínio</h3>
+        <a href="https://www.instagram.com/fanclub_luan_aspindola/" class="patrocinio">FanClub do Luan Aspindola</a>
+    </div>
 </body>
 </html>
